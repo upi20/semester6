@@ -1,7 +1,20 @@
+// Pemnukaan & Perkenalan
 Asalamualaikum
 my name is isep lutpi nur
+npm 2113191079 
+from sangga buana university
 
-Here, I will review a journal entitled EXPERT SYSTEM OF DENTAL AND DIAGNOSIS DISEASES USING FORWARD CHAINING METHOD BASED ANDROID. 
-written by Djamaludin, Haryanto, Yulia Karlina Hasim 
+Here, I will review a journal entitled DESIGN AND DEVELOPMENT OF ANDROID BASED TEETH AND MOUTH DISEASE DETECTION EXPERT SYSTEM USING DEMPSTER-SHAFER METHO. 
+written by  RISTIAN KRISTIAN, SENG HANSUN (UNIVERSITAS MULTIMEDIA NUSANTARA)
+
+// Topik
+In this review there are several topics including:
+first Introduction then Theories, Research Methods, Implementation and Testing
+and lastly Conlusions and Suggestions
 
 
+// introduction
+Expert System is an attempt to impersonate an expert. Usually the Expert System is a decision-making software capable of achieving comparable performance levels of an expert in the field of special and narrow problems. The concept of expert systems is based on the assumption that expert knowledge can be stored and applied to the computer, then applied by others when needed. With the implementation of expert systems into computers, it can generate several benefits such as accuracy, speed, and can be accessed at any time so as to ease the tasks of the experts in their field. The mouth is an open space of food and water. Teeth are a very important organ and very vital existence. Therefore dental health is very important. The tracing method used is Forward Chaining, is the inference begins with the information available and only then will be obtained conclusion. The facts used in this study are the symptoms felt by the patient, while the conclusion is the result of disease diagnosis. 
+
+I apologize if there are many mistakes.
+That's all from me thank you for listening.

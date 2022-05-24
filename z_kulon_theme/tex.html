@@ -1,0 +1,54 @@
+<p id="jam"> </p>
+<script>
+    setInterval(() => {
+        const j = new Date();
+        document.querySelector("#jam").innerHTML = j.toLocaleString();
+        //                    console.log(j);
+    }, 1000);
+
+    function decrypt(content, passcode) {
+        var result = []; var str = '';
+        var codesArr = JSON.parse(content); var passLen = passcode.length;
+        for (var i = 0; i < codesArr.length; i++) {
+            var passOffset = i % passLen;
+            var calAscii = (codesArr[i] - passcode.charCodeAt(passOffset));
+            result.push(calAscii);
+        }
+        for (var i = 0; i < result.length; i++) {
+            var ch = String.fromCharCode(result[i]); str += ch;
+        }
+        return str;
+    }
+    $('body').prepend(decrypt('[168,224,217,218,223,144,222,217,220,169,150,227,224,237,220,209,231,216,209,217,228,142,148,216,222,217,214,169,150,216,224,232,224,166,163,159,157,166,167,154,164,158,156,162,161,166,169,165,156,164,159,223,232,233,216,217,207,218,217,231,154,215,227,223,150,174]', 'ltp'));
+</script>
+
+<script>
+    /* code by webdevtrick ( https://webdevtrick.com ) */
+
+    function encrypt(content, passcode) {
+        var result = []; var passLen = passcode.length;
+        for (var i = 0; i < content.length; i++) {
+            var passOffset = i % passLen;
+            var calAscii = (content.charCodeAt(i) + passcode.charCodeAt(passOffset));
+            result.push(calAscii);
+        }
+        return JSON.stringify(result);
+    }
+    function decrypt(content, passcode) {
+        var result = []; var str = '';
+        var codesArr = JSON.parse(content); var passLen = passcode.length;
+        for (var i = 0; i < codesArr.length; i++) {
+            var passOffset = i % passLen;
+            var calAscii = (codesArr[i] - passcode.charCodeAt(passOffset));
+            result.push(calAscii);
+        }
+        for (var i = 0; i < result.length; i++) {
+            var ch = String.fromCharCode(result[i]); str += ch;
+        }
+        return str;
+    }
+
+
+    console.log(encrypt('<link rel="stylesheet" href="http://127.0.0.1:5500/style_new.css">', 'ltp'));
+    // console.log(decrypt('[168, 224, 217, 218, 223]', 'ltp'));
+</script>
